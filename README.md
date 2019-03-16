@@ -11,9 +11,10 @@
 
 #### Init screen:
 The “start” button must redirect the user to the next screen, the list.
-
+![alt text](https://github.com/omgalbert/react-native-exercise/blob/master/init_screen.png)
 
 #### List screen:
 Load the resources by getting the list with all the countries of the European Union from
 https://restcountries.eu . Use the endpoint that you think works best for the purpose of the
 exercise.
+![alt text](https://github.com/omgalbert/react-native-exercise/blob/master/list_screen.png)
