@@ -6,12 +6,13 @@ export const styles = StyleSheet.create({
   },
   container: {
     flex: 1,
-    backgroundColor: 'black',
-    padding: 20
+    backgroundColor: 'black'
   },
   title: {
     color: 'white',
     fontSize: 24,
-    fontWeight: 'bold'
+    fontWeight: 'bold',
+    marginHorizontal: 20,
+    marginVertical: 10
   }
 });

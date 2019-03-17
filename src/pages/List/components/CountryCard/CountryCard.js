@@ -1,18 +1,29 @@
 import React, { Component } from 'react';
-import { FlatList, Text } from 'react-native';
+import { Text, View } from 'react-native';
+import PropTypes from 'prop-types';
 
 import { styles } from './CountryCard.styles';
 
 export default class CountryCard extends Component {
-  renderItem(item) {
-    return <Text style={styles.countryTitle}>{item.key}</Text>;
+  getLanguage(languages) {
+    return !!languages.length ? languages[0].name : '';
   }
+
   render() {
+    const { country } = this.props;
     return (
-      <FlatList
-        data={[{ key: 'a' }, { key: 'b' }]}
-        renderItem={({ item }) => this.renderItem(item)}
-      />
+      <View style={styles.container}>
+        <Text style={styles.countryTitle}>{country.name}</Text>
+        <Text style={styles.info}>{country.subregion}</Text>
+        <Text style={styles.info}>{country.capital}</Text>
+        <Text style={styles.info}>
+          Lang: {this.getLanguage(country.languages)}
+        </Text>
+      </View>
     );
   }
 }
+
+CountryCard.propTypes = {
+  country: PropTypes.object.isRequired
+};
