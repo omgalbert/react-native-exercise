@@ -6,7 +6,7 @@
 3. The screens must match the wireframes / designs.
 
 #### Resources:
-- API: https://restcountries.eu
+- API: https://restcountries.com
 - React Native: https://facebook.github.io/react-native/docs/getting-started.html
 
 #### Init screen:
